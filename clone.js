@@ -56,11 +56,6 @@ orange.rotate(0);
 
 var chickens = new Group([peach, yellow, purple, green, blue, orange]);
 
-
-
-//THIS ROTATES THE CHICKENS
-
-//THIS MOVES THE CHICKENS WITH NO ROTATION
 function onMouseMove(event) {
   chickens.position = event.point;
 }

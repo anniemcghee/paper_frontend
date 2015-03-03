@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Paper.js Showcase</title>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../style.css">
     <script src="bower_components/paper/dist/paper-full.js"></script>
 
 </head>
+
+
 <body>
 
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -24,12 +25,12 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="/index.html">Home</a></li>
+        <li><a href="/index.html">Home</a></li>
         <li><a href="/clone.html">Chicken Clone</a></li>
         <li><a href="/warhol.html">Chicken Warhol</a></li>
         <li><a href="/smear.html">Chicken Smear</a></li>
         <li><a href="/lollipops.html">Lollipop Snakes</a></li>
-        <li><a href="/rave.html">Rave</a></li>
+        <li class="active"><a href="/rave.html">Rave</a></li>
       </ul>
 
     </div>
@@ -37,12 +38,11 @@
 </nav>
 
 
-<div class="home">
-<h1>One weekend, I set out to make some <small> mini-projects </small> with PaperJS.</h1>
-<h2>Check them out!</h2>
-</div>
-
     <canvas style="background-color: #00000" id="canvas" resize></canvas>
+
+    <script type="text/paperscript" src="rave.js" canvas="canvas"></script>
+
+  <audio id="techno" src="https://www.dropbox.com/s/zcn4ic4ks3p6kp7/Technologic.mp3?dl=1" autoplay autobuffer preload=none loop style="display:none"></audio>
 
 </body>
 </html>

@@ -46,21 +46,5 @@ function onMouseUp(event) {
 }
 
 
-// var mousePos = view.center + [view.bounds.width / 2, 100];
-// var position = view.center;
-// var dest = new Point(1800, random(-300, 1100));
-
-// function onClick(event) {
-
-//   for (var i = 0; i < count; i++) {
-//     var item = project.activeLayer.children[i];
-//     item.position += (mousePos - position) / 10;
-//   }
-// }
-
-// function onMouseMove(event) {
-//      mousePos = event.point;
-// }
-
 
 

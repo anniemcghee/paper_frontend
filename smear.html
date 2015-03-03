@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Paper.js Showcase</title>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../style.css">
     <script src="bower_components/paper/dist/paper-full.js"></script>
 
 </head>
+
+
 <body>
 
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -24,10 +25,10 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="/index.html">Home</a></li>
+        <li><a href="/index.html">Home</a></li>
         <li><a href="/clone.html">Chicken Clone</a></li>
         <li><a href="/warhol.html">Chicken Warhol</a></li>
-        <li><a href="/smear.html">Chicken Smear</a></li>
+        <li class="active"><a href="/smear.html">Chicken Smear</a></li>
         <li><a href="/lollipops.html">Lollipop Snakes</a></li>
         <li><a href="/rave.html">Rave</a></li>
       </ul>
@@ -37,12 +38,22 @@
 </nav>
 
 
-<div class="home">
-<h1>One weekend, I set out to make some <small> mini-projects </small> with PaperJS.</h1>
-<h2>Check them out!</h2>
-</div>
-
     <canvas style="background-color: #00000" id="canvas" resize></canvas>
+
+    <script type="text/paperscript" src="smear.js" canvas="canvas"></script>
+
+
+<img src="http://i.imgur.com/aYEXWnA.png" id="yellow">
+<img src="http://i.imgur.com/mdBJoM4.png" id="purple">
+<img src="http://i.imgur.com/8z2hKVH.png" id="green">
+<img src="http://i.imgur.com/jIQQqmU.png" id="peach">
+<img src="http://i.imgur.com/uAEa20U.png" id="orange">
+<img src="http://i.imgur.com/FA3Oxtz.png" id="blue">
 
 </body>
 </html>
+
+
+
+
+

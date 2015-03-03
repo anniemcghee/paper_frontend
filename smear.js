@@ -1,49 +1,52 @@
-var yellow = new Raster('yellow');
 
-yellow.position = view.center;
-yellow.scale(0.3);
-yellow.rotate(0);
 
-var peach = new Raster('peach');
 
-peach.position = view.center + 50;
-peach.scale(.45);
-peach.rotate(0);
+  var yellow = new Raster('yellow');
 
-var purple = new Raster('purple');
+  yellow.position = view.center;
+  yellow.scale(0.3);
+  yellow.rotate(0);
 
-purple.position = view.center + 100;
-purple.scale(.5);
-purple.rotate(0);
+  var peach = new Raster('peach');
 
-var green = new Raster('green');
+  peach.position = view.center + 50;
+  peach.scale(.45);
+  peach.rotate(0);
 
-green.position = view.center + 150;
-green.scale(.7);
-green.rotate(0);
+  var purple = new Raster('purple');
 
-var blue = new Raster('blue');
+  purple.position = view.center + 100;
+  purple.scale(.5);
+  purple.rotate(0);
 
-blue.position = view.center + 175;
-blue.scale(.9);
-blue.rotate(0);
+  var green = new Raster('green');
 
-var orange = new Raster('orange');
+  green.position = view.center + 150;
+  green.scale(.7);
+  green.rotate(0);
 
-orange.position = view.center + 200;
-orange.scale(1);
-orange.rotate(0);
+  var blue = new Raster('blue');
 
-var clones = 10;
-var angle = 360 / clones;
+  blue.position = view.center + 175;
+  blue.scale(.9);
+  blue.rotate(0);
 
-var chickens = new Group([peach, yellow, purple, green, blue, orange]);
+  var orange = new Raster('orange');
 
-function onFrame(event) {
+  orange.position = view.center + 200;
+  orange.scale(1);
+  orange.rotate(0);
 
-for(var i = 0; i < clones; i++) {
-  var clonedPath = chickens.clone();
-  clonedPath.rotate(angle * i, chickens.bounds.topLeft);
-};
-  chickens.rotate(.35, view.center)
-}
+  var clones = 10;
+  var angle = 360 / clones;
+
+  var chickens = new Group([peach, yellow, purple, green, blue, orange]);
+
+  function onFrame(event) {
+
+  for(var i = 0; i < clones; i++) {
+    var clonedPath = chickens.clone();
+    clonedPath.rotate(angle * i, chickens.bounds.topLeft);
+  };
+    chickens.rotate(.35, view.center)
+  }
